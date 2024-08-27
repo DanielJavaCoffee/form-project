@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Qual área deseja seguir?</h1>
+    </header>
+
+    <section id="section01">
+        <div>
+            <button id="Back-End" onclick="back()">Back-End</button>
+        </div>
+
+        <div>
+            <button id="Front-End" onclick="front()">Front-End</button>
+        </div>
+    </section>
+
+    <section id="section02">
+
+        <div class="flex" id="sectionB">
+            <h2>Qual linguagem você deseja seguir no Back-End?</h2>
+            <div class="section02-flex">
+                <button id="java" onclick="backResposta(event)" value="java">Java</button>
+            </div>
+            <div class="section02-flex">
+                <button id="python" onclick="backResposta(event)" value="python">Python</button>
+            </div>
+            <div class="section02-flex">
+                <button id="javascript" onclick="backResposta(event)" value="javascript">JavaScript</button>
+            </div>
+        </div>
+
+        <div class="flex" id="sectionF">
+            <h2>Qual linguagem você deseja seguir no Front-End?</h2>
+
+            <div class="section02-flex">
+                <button id="react" onclick="frontResposta(event)" value="react">React</button>
+            </div>
+    
+            <div class="section02-flex">
+                <button id="angula" onclick="frontResposta(event)" value="angula">Angular</button>
+            </div>
+
+            <div class="section02-flex">
+                <button id="vue.js" onclick="frontResposta(event)" value="vue.js">Vue.js</button>
+            </div>
+        </div>
+
+        <div id="resposta">
+            <h4 id="text_resposta"></h4>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
